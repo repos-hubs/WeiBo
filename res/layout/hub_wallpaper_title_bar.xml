@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:orientation="horizontal"
+	android:id="@id/hub_wallpaper_title_bar_id" style="@style/TitleBarStyle"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+		
+	<ImageView 
+		android:textColor="@android:color/white" 
+		android:id="@id/wallpaper_back"
+		android:layout_height="fill_parent" 
+		android:layout_width="wrap_content" 	
+		android:layout_alignParentLeft="true" 
+		android:layout_centerVertical="true"
+		android:src="@drawable/wallpaper_icon_back_bg"		
+		style="@style/TitleNameStyle"
+	/>	
+		
+	<TextView android:textColor="@android:color/white" 
+		android:id="@id/wallpaper_title"
+		android:layout_height="fill_parent" 
+		android:shadowColor="@android:color/black"		
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"		
+		style="@style/TitleNameStyle" 
+		
+	/>
+		
+	<ImageView 	
+		android:textColor="@android:color/white" 
+		android:id="@id/wallpaper_search"
+		android:layout_height="fill_parent"
+		android:layout_width="wrap_content" 		
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/wallpaper_icon_search_bg"		
+		style="@style/TitleNameStyle"
+	/>	
+
+		
+</RelativeLayout>

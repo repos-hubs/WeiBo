@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:focusable="true"
+	android:focusableInTouchMode="true"
+	android:background="@color/title_bg">
+	<!-- <ImageView
+		android:id="@+id/img_accordion_item_bg"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:scaleType="fitXY"
+		android:src="@drawable/accordion_item" />
+	<ImageView
+		android:id="@+id/img_accordion_item_icon"
+		android:layout_width="24dip"
+		android:layout_height="24dip"
+		android:layout_alignTop="@+id/img_accordion_item_bg"
+		android:layout_marginLeft="10dip"
+		android:layout_marginTop="6dip"
+		android:visibility="gone"
+		android:src="@drawable/icon_category" /> -->
+	<RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/itemTitleLayout">
+		
+		<TextView
+			android:id="@+id/lbl_accordion_item_txt"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@+id/img_accordion_item_bg"
+			android:layout_toRightOf="@+id/img_accordion_item_icon"
+			android:layout_toLeftOf="@+id/lbl_accordion_item_edit"
+			android:padding="10dip"
+			android:singleLine="true"
+			android:textSize="14sp"
+			android:text="N/A"
+			android:textColor="@color/black"/>
+		<!-- <TextView
+			android:id="@+id/lbl_accordion_item_edit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@+id/img_accordion_item_bg"
+			android:layout_alignParentRight="true"
+			android:singleLine="true"
+			android:textSize="14sp"
+			android:text="edit"
+			android:padding="10dip"
+			android:layout_marginRight="40dp"
+			android:textColor="@color/black"/> -->
+		<ImageView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dp"
+			android:padding="5dp"
+			android:src="@drawable/right_arrow"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+	<com.kindroid.hub.widget.MyGridView
+		android:id="@+id/grd_accordion_item_content"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_below="@+id/itemTitleLayout"
+		android:horizontalSpacing="6dip"
+		android:verticalSpacing="10dip"
+		android:numColumns="5"
+		android:visibility="gone"/>
+	<ImageView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:scaleType="fitXY"
+		android:src="@drawable/dot_line_long"
+		android:layout_below="@+id/grd_accordion_item_content"/>
+</RelativeLayout>

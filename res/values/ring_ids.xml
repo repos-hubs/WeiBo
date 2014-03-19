@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <item type="id" name="frame_title">false</item>
+    
+    <item type="id" name="online_seek_id">false</item>
+    <item type="id" name="online_seek_bar">false</item>
+    <item type="id" name="online_seek_text">false</item>
+    <item type="id" name="ring_operation_frame">false</item>
+    
+    <item type="id" name="raw_ring_image">false</item>
+    <item type="id" name="play_indicator">false</item>
+    <item type="id" name="nowplaying">false</item>
+    <item type="id" name="ring_store_or_delete">false</item>
+    <item type="id" name="preview_download_progress">false</item>
+    <item type="id" name="preview_prepare_progress">false</item>
+    <item type="id" name="ring_select_checkbox">false</item>
+    <item type="id" name="ring_myresource_preview_frame">false</item>
+    <item type="id" name="ring_myresource_list_view">false</item>
+    <item type="id" name="ring_myshare_preview_frame">false</item>
+    <item type="id" name="ring_myshare_list_view">false</item>
+    <item type="id" name="preview_title_bar_id">false</item>
+    <item type="id" name="preview_order_bar_wrap_id">false</item>
+    <item type="id" name="order_preview">false</item>
+    <item type="id" name="to_online_view">false</item>
+    <item type="id" name="preview_order_bar_id">false</item>
+    <item type="id" name="subject_recommand">false</item>
+    <item type="id" name="subject_image">false</item>
+    
+    <item type="id" name="icon_back">false</item>
+    <item type="id" name="icon_search">false</item>
+    <item type="id" name="search_history_view">false</item>
+    <item type="id" name="search_result_view">false</item>
+    <item type="id" name="search_input">false</item>
+    <item type="id" name="search_action">false</item>
+    <item type="id" name="search_category">false</item>
+    
+    <item type="id" name="new_order">false</item>
+    <item type="id" name="hot_order">false</item>
+    <item type="id" name="local_order">false</item>
+    <item type="id" name="recommand_order">false</item>
+    <item type="id" name="ring_preview_frame">false</item>
+    <item type="id" name="ring_preview_item_top">false</item>
+    <item type="id" name="ring_preview_item_bottom">false</item>
+    <item type="id" name="ring_share_person">false</item>
+    <item type="id" name="ring_share_time">false</item>
+    <item type="id" name="ring_share">false</item>
+    <item type="id" name="ring_comment">false</item>
+    <item type="id" name="ring_seekbar">false</item>
+    <item type="id" name="ring_length">false</item>
+    <item type="id" name="ring_player">false</item>
+    <item type="id" name="ring_download">false</item>
+    <item type="id" name="ring_download_time">false</item>
+    <item type="id" name="ring_progress_layout">false</item>
+    <item type="id" name="ringt_length">false</item>
+    <item type="id" name="ring_image">false</item>
+    <item type="id" name="ring_name">false</item>
+    <item type="id" name="ring_owner">false</item>
+    <item type="id" name="ring_size">false</item>
+    <item type="id" name="preview_loading_progressbar">false</item>
+    <item type="id" name="preview_loading_text">false</item>
+    <!-- detail bottom layout  -->
+    <item type="id" name="detail_bottom_panel">false</item>
+    <item type="id" name="detail_previous_button">false</item>
+    <item type="id" name="detail_previous_button_text">false</item>
+    <item type="id" name="detail_next_button">false</item>
+    <item type="id" name="detail_next_button_text">false</item>
+    <item type="id" name="commentTextView">false</item>
+    <item type="id" name="forwardTextView">false</item>
+
+    <item type="id" name="ring_preview_item_id">false</item>
+    <item type="id" name="ring_detail_item_bottom">false</item>
+    <item type="id" name="detail_size">false</item>
+    <item type="id" name="detail_download_count">false</item>
+    <item type="id" name="detail_forward">false</item>
+    <item type="id" name="detail_comment">false</item>
+    <item type="id" name="commentsListLayout">false</item>
+    <item type="id" name="commentsListView">false</item>
+</resources>

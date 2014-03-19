@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@id/ring_preview_frame"
+	android:background="@color/main_bg_color" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- Title Bar -->
+	<include android:id="@id/preview_title_bar_id" 
+	    layout="@layout/preview_title_bar" />
+	<!-- Bottom Bar -->
+	<include android:id="@id/detail_bottom_panel" 
+	    layout="@layout/detail_bottom_bar" />
+	<ScrollView 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingLeft="4.0dip"
+	    android:paddingRight="4.0dip" 
+		android:fillViewport="true"
+		android:scrollbars="none"
+		android:layout_below="@id/preview_title_bar_id"
+		android:layout_above="@id/detail_bottom_panel"
+		android:background="@color/white">
+		<LinearLayout
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+		    <com.kindroid.hub.ui.category.ringtone.RingtoneMessageListItem
+		    	android:orientation="vertical"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:id="@+id/ring_item_view" >
+		    	<include android:id="@id/ring_preview_item_top"
+	            	layout="@layout/ring_preview_item_top"/>
+	        	<include android:id="@id/ring_detail_item_bottom"
+	            	layout="@layout/ring_detail_item_bottom"/>
+	    	</com.kindroid.hub.ui.category.ringtone.RingtoneMessageListItem>
+			<LinearLayout 
+		   		android:orientation="horizontal"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_margin="6dp"
+		    	android:background="@color/hub_news_details_comments_bg">
+		    	<TextView 
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/msg_comments"
+		    		android:textColor="@color/black"
+		    		android:layout_marginLeft="5dp"
+		    		android:textSize="15sp"/>	
+			</LinearLayout>
+			<LinearLayout 
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:id="@id/commentsListLayout">
+				<ListView 
+			    	android:layout_width="fill_parent"
+			    	android:layout_height="fill_parent"
+			    	android:id="@id/commentsListView"
+			    	android:divider="@null"
+			    	android:layout_marginLeft="6dp"
+			    	android:layout_marginRight="6dp"
+			    	android:cacheColorHint="#00000000"/>
+		    </LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

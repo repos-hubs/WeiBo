@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="black">#000000</color>
+	<color name="white">#FFFFFF</color>
+	<color name="grey">#727272</color>
+	<color name="red">#FF0000</color>
+	<color name="blue">#0000FF</color>
+	<color name="yellow">#fed56b</color>
+	<color name="textColor">#333333</color>
+	<color name="lightBlue">#ff00cccc</color>
+	<color name="darkBlue">#ff0099cc</color>
+	<color name="orange">#fe8725</color>
+	<color name="squareItemText">#0e7ac6</color>
+	<color name="squareItemContent">#505050</color>
+	<color name="squareItemTime">#a4a4a4</color>
+	<color name="orange_tint">#aaffbf00</color>
+	<color name="rigisterTitle">#ff800e</color>  
+	<color name="blue_lable">#39B1DC</color>
+	<color name="binded_title">#7BAA00</color>
+	<color name="at_me_friend_title">#F4AF0A</color>
+	<color name="dark_green">#448E2D</color>
+	<color name="login_description">#505050</color>
+	<color name="login_text">#448e2d</color>
+	<color name="register_text">#006db2</color>
+	<color name="title_bg">#EBEBEB</color>
+	<color name="grid_news">#1b96c5</color>
+	<color name="grid_joke">#952727</color>
+	<color name="grid_mm">#f45ca0</color>
+	<color name="grid_wallpaper">#87ac00</color>
+	<color name="grid_ringtone">#ad1fc7</color>
+	<color name="original_text">#6C6C6C</color>
+	<color name="forward_content_bg">#EBEBEB</color>
+	<color name="hub_news_details_comments_bg">#CCE2EA</color>
+	<color name="hub_news_details_comments_user_name">#1B96C5</color>
+	<color name="transparent_black">#50000000</color>
+	<color name="transparent_gray">#50727272</color>
+</resources>

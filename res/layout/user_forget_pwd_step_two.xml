@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@color/white"
+	android:gravity="center_horizontal">
+	<!-- Title Bar -->
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="38dip" android:background="@drawable/head_bg"
+		android:gravity="center_vertical">
+		<ImageView android:id="@+id/userRegister"
+			android:layout_alignParentRight="true" android:src="@drawable/top_register"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginRight="10dp" />
+	</RelativeLayout>
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<ImageView android:src="@drawable/user_forget_pwd"
+					android:layout_marginTop="20dp" android:layout_marginLeft="12dp"
+					android:id="@+id/loginTitle" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="vertical"
+					android:layout_marginTop="10dp" android:background="@drawable/user_top_bg"
+					android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal">
+						<TextView android:id="@+id/tipText"
+							android:layout_marginLeft="10dp" android:layout_marginTop="60dp"
+							android:layout_alignParentLeft="true" android:textSize="14sp"
+							android:layout_width="wrap_content" android:layout_height="wrap_content" />
+						<ImageView android:src="@drawable/forget_pwd_icon"
+							android:layout_alignParentRight="true" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" />
+					</RelativeLayout>
+					<EditText android:id="@+id/text" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_margin="10dp" />
+					<TextView android:id="@+id/submit" android:layout_gravity="center_horizontal"
+						android:gravity="center_vertical|center_horizontal"
+						android:textSize="18sp" android:text="@string/user_modify_submit"
+						android:background="@drawable/login_btn_bg" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="@color/white"
+						android:layout_marginBottom="10dp" />
+				</LinearLayout>
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

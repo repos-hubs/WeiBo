@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@color/white">
+	 <!-- Title Bar -->
+	<include android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    layout="@layout/preview_title_bar"/>"
+
+	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/title_bg">
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/search_input_bg"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"
+			android:gravity="center_horizontal">
+			<EditText
+				android:id="@id/search_input"
+				android:layout_toLeftOf="@+id/btn_search"
+				android:layout_width="fill_parent"
+				android:layout_height="23dip"
+				android:layout_marginTop="2dip"
+				android:paddingLeft="10dp"
+				android:paddingRight="20dp"
+				android:gravity="center_vertical"
+				android:singleLine="true"
+				style="?android:attr/textViewStyle"
+				android:background="@null"
+				android:layout_centerVertical="true"
+				android:textColor="#000000" />
+			<ImageView
+				android:id="@id/search_action"
+				android:clickable="true"
+				android:focusableInTouchMode="false"
+				android:src="@drawable/ringtone_search_purple_background"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:paddingRight="10dp"
+				android:scaleType="fitCenter"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</RelativeLayout>
+	</LinearLayout>
+	<ListView android:id="@id/search_history_view" 
+	    style="@style/PreviewListViewStyle" />
+	<ListView android:id="@id/search_result_view"
+	    style="@style/PreviewListViewStyle" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@id/ring_preview_frame"
+	android:background="@color/main_bg_color" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<include android:id="@id/preview_title_bar_id" 
+	    layout="@layout/preview_title_bar" />
+	<LinearLayout android:id="@id/preview_order_bar_wrap_id"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/preview_title_bar_id"
+		android:orientation="vertical">
+		<include layout="@layout/preview_order_bar" />
+	</LinearLayout>
+	<ListView android:id="@id/order_preview"
+	    android:layout_below="@id/preview_order_bar_wrap_id"
+		style="@style/PreviewListViewStyle"
+		android:divider="#00000000" />
+</RelativeLayout>

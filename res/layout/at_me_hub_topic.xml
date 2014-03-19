@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/white">
+     <!-- Title Bar -->
+	<RelativeLayout
+		android:id="@+id/title_bar"
+		android:layout_width="fill_parent"
+		android:layout_height="38dip"
+		android:layout_alignParentTop="true"
+		android:background="@drawable/head_bg">
+		<TextView
+			android:id="@+id/topicTitleTextView"
+			android:gravity="center"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:layout_gravity="center"
+			android:layout_centerInParent="true"
+			android:textColor="@color/white"
+			android:textSize="18sp"
+			android:paddingRight="20dp"
+			android:text="@string/msg_topic_title"/>
+		<ImageView
+			android:id="@+id/btn_back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"
+			android:layout_centerVertical="true"
+			android:src="@drawable/icon_back"
+			android:scaleType="fitXY"
+			android:focusable="false"
+			android:clickable="true"
+			/>
+	</RelativeLayout>
+	<ListView 
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:id="@+id/topicListView"
+    	android:divider="@null"
+    	android:layout_marginLeft="6dp"
+    	android:layout_marginRight="6dp"
+    	android:cacheColorHint="#00000000"/>
+</LinearLayout>

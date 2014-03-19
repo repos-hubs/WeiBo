@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/white">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/head_bg">
+		<ImageView android:id="@+id/backImageView" android:src="@drawable/icon_back"
+			android:layout_alignParentLeft="true" android:layout_width="wrap_content"
+			android:layout_marginLeft="5dp" android:layout_centerVertical="true"
+			android:layout_height="wrap_content" />
+		<ImageView android:id="@+id/followOperate"
+			android:layout_marginRight="5dp" android:layout_centerVertical="true"
+			android:layout_alignParentRight="true" android:layout_width="wrap_content"
+			android:src="@drawable/cancel_follow_btn" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/nickNameTextView"
+			android:textColor="@color/white" android:textStyle="bold"
+			android:textSize="18sp" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerInParent="true" />
+	</RelativeLayout>
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<LinearLayout android:orientation="horizontal" android:id="@+id/modifyUserInfoLayout"
+				android:layout_margin="6dp" android:layout_width="fill_parent"
+				android:layout_height="80dp" android:gravity="center_vertical"
+				android:background="@color/title_bg">
+				<ImageView android:id="@+id/userAvatarImageView"
+					android:layout_width="70dp" android:layout_height="70dp"
+					android:layout_marginRight="6dip" android:padding="1dp"
+					android:layout_gravity="center_vertical" android:src="@drawable/user_default" />
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_weight="1" android:gravity="center_vertical">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:orientation="horizontal">
+						<TextView android:id="@+id/userNameTextView"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:textColor="@color/black" android:textSize="16sp" />
+					</LinearLayout>
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:layout_marginTop="10dp">
+						<TextView android:id="@+id/genderTextView"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:textColor="@color/black" android:textSize="16sp"
+							android:gravity="left" />
+						<TextView android:id="@+id/locationTextView"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:textColor="@color/black" android:textSize="16sp"
+							android:layout_marginLeft="30dp" android:layout_gravity="center_horizontal" />
+					</LinearLayout>
+				</LinearLayout>
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/right_arrow"
+					android:layout_gravity="center_vertical"
+					android:layout_marginRight="10dp" />
+			</LinearLayout>
+			<TableLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TableRow android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:gravity="center_horizontal">
+					<LinearLayout android:orientation="vertical" android:id="@+id/friendsLayout"
+						android:layout_width="95dp" android:layout_height="80dp"
+						android:background="@color/title_bg" android:layout_margin="6dp"
+						android:layout_weight="1" android:gravity="center_vertical|center_horizontal">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/friendTextView"
+							android:textSize="20sp" android:textColor="@color/red" />
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="@string/msg_focus"
+							android:textSize="20sp" android:textColor="@color/black" />
+					</LinearLayout>
+					<LinearLayout android:orientation="vertical" android:id="@+id/followsLayout"
+						android:layout_width="95dp" android:layout_height="80dp"
+						android:background="@color/title_bg" android:layout_margin="6dp"
+						android:layout_weight="1" android:gravity="center_vertical|center_horizontal">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/followsTextView"
+							android:textSize="20sp" android:textColor="@color/red" />
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="@string/msg_funs"
+							android:textSize="20sp" android:textColor="@color/black" />
+					</LinearLayout>
+					<LinearLayout android:orientation="vertical"  android:id="@+id/atLayout"
+						android:layout_width="95dp" android:layout_height="80dp"
+						android:background="@color/title_bg" android:layout_margin="6dp"
+						android:layout_weight="1" android:gravity="center_vertical|center_horizontal">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/atTextView"
+							android:text="\@" android:textSize="20sp" android:textColor="@color/red" />
+					</LinearLayout>
+					<LinearLayout android:orientation="vertical"  android:id="@+id/favoriteLayout"
+						android:layout_width="95dp" android:layout_height="80dp" android:visibility="gone"
+						android:background="@color/title_bg" android:layout_margin="6dp"
+						android:layout_weight="1" android:gravity="center_vertical|center_horizontal">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/favoriteTextView"
+							android:textSize="20sp" android:textColor="@color/red" />
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="@string/user_favorite"
+							android:textSize="20sp" android:textColor="@color/black" />
+					</LinearLayout>
+					<LinearLayout android:orientation="vertical"  android:id="@+id/topicLayout"
+						android:layout_width="95dp" android:layout_height="80dp" android:visibility="gone"
+						android:background="@color/title_bg" android:layout_margin="6dp"
+						android:layout_weight="1" android:gravity="center_vertical|center_horizontal">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="@string/user_topic"
+							android:textSize="20sp" android:textColor="@color/black" />
+					</LinearLayout>
+				</TableRow>
+			</TableLayout>
+			<ImageView android:src="@drawable/dot_line_short"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<ListView android:id="@+id/listViewUser" android:layout_weight="1"
+				android:cacheColorHint="#00000000" android:divider="@null"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</LinearLayout>
+</LinearLayout>

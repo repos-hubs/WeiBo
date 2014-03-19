@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@color/white"
+	android:gravity="center_horizontal">
+	<!-- Title Bar -->
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="38dip" android:background="@drawable/head_bg"
+		android:gravity="center_vertical">
+		<TextView android:text="@string/user_register"
+			android:textColor="@color/white" android:textSize="20sp"
+			android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</RelativeLayout>
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<ImageView android:src="@drawable/user_register_title"
+					android:layout_marginTop="20dp" android:layout_marginLeft="12dp"
+					android:id="@+id/loginTitle" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="vertical"
+					android:layout_marginTop="10dp" android:background="@drawable/user_top_bg"
+					android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal">
+						<TextView android:text="@string/register_welcome"
+							android:layout_marginLeft="10dp" android:layout_marginTop="60dp"
+							android:layout_alignParentLeft="true" android:textSize="16sp"
+							android:layout_width="wrap_content" android:layout_height="wrap_content" />
+						<ImageView android:src="@drawable/register_boy"
+							android:layout_alignParentRight="true" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" />
+					</RelativeLayout>
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:layout_margin="5dp">
+						<TextView android:text="@string/user_login_user_name"
+							android:gravity="right" android:textColor="@color/black"
+							android:textSize="20sp" android:layout_width="80dp"
+							android:layout_height="wrap_content" />
+						<EditText android:id="@+id/userName" android:hint="@string/user_login_hit"
+							android:singleLine="true" android:layout_weight="1"
+							android:layout_width="fill_parent" android:layout_height="wrap_content" />
+					</LinearLayout>
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:layout_margin="5dp">
+						<TextView android:text="@string/user_login_password"
+							android:gravity="right" android:textColor="@color/black"
+							android:textSize="20sp" android:layout_width="80dp"
+							android:layout_height="wrap_content" />
+						<EditText android:id="@+id/password" android:singleLine="true"
+							android:password="true" android:layout_weight="1"
+							android:layout_width="fill_parent" android:layout_height="wrap_content" />
+					</LinearLayout>
+					<ImageView android:layout_gravity="center_horizontal"
+						android:id="@+id/userRegister" android:src="@drawable/regist_submit"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp" />
+				</LinearLayout>
+			</RelativeLayout>
+			<TextView android:text="@string/user_register_tip1" android:layout_marginTop="5dp"
+				android:textSize="14sp" android:layout_marginLeft="20dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/user_register_tip2" android:layout_marginTop="5dp"
+				android:textSize="14sp" android:layout_marginLeft="20dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/user_register_tip3" android:layout_marginTop="5dp"
+				android:textSize="14sp" android:layout_marginLeft="20dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/user_login_other_way"
+				android:textSize="18sp" android:layout_marginTop="60dp"
+				android:layout_marginBottom="10dp" android:layout_gravity="center_horizontal"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:gravity="center_horizontal">
+				<ImageView android:id="@+id/sinaWeibo" android:src="@drawable/sina_weibo"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<ImageView android:id="@+id/qqWeibo" android:src="@drawable/qq_weibo"
+					android:layout_marginLeft="20dp" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
+

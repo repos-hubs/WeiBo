@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@id/wallpaper_preview_item_id"
+	android:paddingLeft="4.0dip"
+	android:paddingRight="4.0dip"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@color/white"
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	<RelativeLayout
+	    android:id="@id/wallpaper_preview_item_title"
+	    android:layout_width="fill_parent"
+	    android:layout_height="80.0dip"
+	    android:paddingTop="4dip"
+	    android:paddingBottom="4dip" >
+	    <ImageView android:gravity="center"
+	        android:id="@id/wallpaper_image"
+		    android:layout_width="72.0dip"
+		    android:layout_height="72.0dip"
+		    android:src="@drawable/joke_icon"
+		    android:scaleType="centerInside"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true" />
+	    <TextView android:id="@id/wallpaper_share_person"
+	        android:paddingLeft="2.0dip"
+		    android:paddingTop="8.0dip"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_toRightOf="@id/wallpaper_image"
+		    style="@style/PlainBlackTextStyle"
+		     />
+		     <!--  style="@style/PlainTextStyle" -->
+	    <TextView android:id="@id/wallpaper_share_time"
+		    android:singleLine="true"
+		    android:layout_weight="1.0"
+		    android:paddingLeft="2.0dip"
+		    android:paddingTop="8.0dip"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_toRightOf="@id/wallpaper_image"
+		    android:layout_below="@id/wallpaper_share_person"
+		    style="@style/PlainTimeStyle"
+		   />
+		    <!--  style="@style/PlainTimeStyle" -->
+	    <ImageView  android:id="@id/wallpaper_comment"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentBottom="true"
+		    android:scaleType="fitCenter"
+		    android:background="@drawable/wallpaper_one_share_background" />
+		<ImageView  android:id="@id/wallpaper_share"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:scaleType="fitCenter"
+		    android:layout_toLeftOf="@id/wallpaper_comment"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginRight="30dip"
+		    android:background="@drawable/wallpaper_one_comment_background" />
+		   
+    </RelativeLayout>
+    <View android:layout_width="fill_parent"
+    	android:layout_height="1dip"    
+    	android:background="@drawable/dot_line" />
+    	
+    <TextView android:layout_width="wrap_content"
+    		  android:layout_height="wrap_content"    
+    		  android:id="@id/wallpaper_title_name"
+    		  style="@style/PlainBlackTextStyle"
+    		  android:verticalSpacing="10dp" 
+			  android:horizontalSpacing="10dp"
+			  android:text="222222222222"
+    	 />
+    		
+    <ImageView 
+    	android:id="@id/wallpaper_enlarge"
+     	android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_alignParentLeft="true" 
+		android:layout_centerVertical="true"	
+		android:layout_gravity="center"	
+    />	
+    	
+
+</LinearLayout>

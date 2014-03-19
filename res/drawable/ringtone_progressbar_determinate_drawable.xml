@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@android:id/background">
+	    <shape android:shape="line" >
+			<stroke android:color="@color/ringtone_player_progressbar_background"
+				android:width="3dip" />
+		</shape>
+	</item>
+	<item android:id="@android:id/secondaryProgress" >
+		<clip>
+			<shape android:shape="line" >
+				<stroke android:color="@color/ringtone_player_progressbar_secondaryprogress"
+				    android:width="3dip" />
+			</shape>
+		</clip>
+	</item>
+	<item android:id="@android:id/progress">
+		<clip>
+			<shape android:shape="line" >
+				<stroke android:color="@color/ringtone_player_progressbar_progress"
+				    android:width="3dip" />
+			</shape>
+		</clip>
+	</item>
+</layer-list>

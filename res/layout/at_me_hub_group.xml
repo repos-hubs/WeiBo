@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="38dp"
+		android:gravity="right"
+		android:background="@drawable/tab_bg">
+		<ImageView
+			android:id="@+id/addGroupImageView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dip"
+			android:layout_centerVertical="true"
+			android:src="@drawable/icon_add_group"
+			android:scaleType="fitXY"
+			android:focusable="false"
+			android:layout_gravity="center_vertical"
+			android:layout_toLeftOf="@+id/addGroupTextView"
+			android:clickable="true"/>
+		<TextView
+			android:id="@+id/addGroupTextView"
+			android:gravity="center"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center"
+			android:textColor="@color/black"
+			android:textSize="18sp"
+			android:layout_marginRight="5dp"
+			android:text="@string/msg_add_group"/>
+	</LinearLayout>
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:padding="8dp">
+		<com.kindroid.hub.widget.AccordionView
+			android:id="@+id/acd_category"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+	</ScrollView>
+</LinearLayout>

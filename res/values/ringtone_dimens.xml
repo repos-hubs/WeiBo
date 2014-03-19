@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="title_bar_height">38.0dip</dimen>
+    <dimen name="title_bar_width_padding">10.0dip</dimen>
+    <dimen name="main_title_text_size">24.0dip</dimen>
+    <dimen name="title_operation_text_size">20.0dip</dimen>
+    <dimen name="time_text_size">14.0dip</dimen>
+    <dimen name="category_name_text_size">20.0dip</dimen>
+    <dimen name="listview_divider_width">2.0px</dimen>
+    <dimen name="fast_seek_descript_text_size_on_scroll">10.0dip</dimen>
+    <dimen name="fast_seek_descript_text_size_on_normal">8.0dip</dimen>
+    <dimen name="margin_to_top_of_category_select_dialog">38.0dip</dimen>
+    <dimen name="normal_height">64.0dip</dimen>
+    <dimen name="expanded_height">128.0dip</dimen>
+</resources>

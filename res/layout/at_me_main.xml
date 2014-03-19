@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_width="wrap_content" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		
+		<RelativeLayout
+			android:id="@+id/title_bar"
+			android:layout_width="fill_parent"
+			android:layout_height="38dip"
+			android:layout_alignParentTop="true"
+			android:gravity="center_vertical"
+			android:background="@drawable/head_bg">
+			<ImageView
+				android:id="@+id/btn_back"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:src="@drawable/icon_back"
+				android:scaleType="fitXY"
+				android:focusable="false"
+				android:clickable="true"
+				android:padding="5dp"
+				android:visibility="invisible"
+				/>
+				
+			<RelativeLayout 
+				android:id="@+id/tabHostContent"
+				android:layout_toRightOf="@+id/btn_back"
+				android:layout_toLeftOf="@+id/btn_search"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_gravity="bottom"
+				android:gravity="center_vertical"
+				android:background="@drawable/at_me_tag_bg">
+				<LinearLayout 
+					android:layout_width="wrap_content"
+					android:id="@+id/friendLayout" 
+					android:layout_height="wrap_content"
+					android:minWidth="113px"
+					android:gravity="center_horizontal|center_vertical" 
+					android:layout_gravity="center_vertical"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_centerHorizontal="true"
+					android:background="@drawable/at_me_tab_left_on">
+					<TextView 
+						android:id="@+id/friendTextView" 
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:text="@string/msg_at_me"
+						android:textColor="@color/white"
+						android:textSize="18sp"
+						android:padding="5dp"
+						android:layout_gravity="center_vertical"
+						android:gravity="center_vertical|center_horizontal"
+						/>
+				</LinearLayout>
+				<LinearLayout 
+					android:layout_width="wrap_content"
+					android:minWidth="113px"
+					android:id="@+id/groupLayout" 
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal|center_vertical" 
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:weightSum="1"
+					android:layout_centerHorizontal="true"
+					android:layout_gravity="center_vertical">
+					<TextView 
+						android:id="@+id/groupTextView" 
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:text="@string/home_comment_title"
+						android:textColor="@color/white"
+						android:textSize="18sp"
+						android:padding="5dp"
+						android:gravity="center_vertical|center_horizontal"
+						/>
+				</LinearLayout>
+				<!-- <LinearLayout 
+					android:layout_width="wrap_content"
+					android:id="@+id/atMeLayout" 
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal|center_vertical" 
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_gravity="center_vertical">
+					<TextView 
+						android:id="@+id/atMeTextView" 
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:text="@string/home_comment_title"
+						android:textColor="@color/white"
+						android:textSize="18sp"
+						android:gravity="center_vertical|center_horizontal"
+						android:layout_marginRight="5dp"
+						android:padding="5dp"
+						/>
+				</LinearLayout> -->
+			</RelativeLayout>	
+			
+			<ImageView
+				android:id="@+id/btn_search"
+				android:src="@drawable/at_me_single_man"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:clickable="true"
+				android:padding="5dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:scaleType="fitXY"/>
+		</RelativeLayout>
+		
+		<TabWidget 
+			android:id="@android:id/tabs"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="0.0" 
+			android:visibility="gone" />
+		<FrameLayout 
+			android:id="@android:id/tabcontent"
+			android:background="@color/white" 
+			android:layout_width="fill_parent"
+			android:layout_height="0.0dip" 
+			android:layout_weight="1.0" />
+	</LinearLayout>
+</TabHost>

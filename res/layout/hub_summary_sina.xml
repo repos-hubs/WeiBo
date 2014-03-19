@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/head_bg">
+		<ImageView android:id="@+id/publishWeibo" android:src="@drawable/tribe_publish_weibo_btn"
+			android:layout_alignParentLeft="true" android:layout_width="wrap_content"
+			android:layout_marginLeft="5dp" android:layout_centerVertical="true"
+			android:layout_height="wrap_content" />
+		<ImageView android:id="@+id/refreshWeibo"
+			android:layout_marginRight="5dp" android:layout_centerVertical="true"
+			android:layout_alignParentRight="true" android:layout_width="wrap_content"
+			android:src="@drawable/weibo_refresh_btn" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/nickNameTextView"
+			android:textColor="@color/white" android:textStyle="bold"
+			android:textSize="18sp" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerInParent="true" />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ListView android:id="@+id/listViewSina"
+			android:cacheColorHint="#00000000" android:divider="@null"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/noLoginTips" android:text="@string/user_no_login_tips"
+			android:textColor="@color/blue" android:layout_width="wrap_content"
+			android:layout_centerInParent="true" android:layout_height="wrap_content" />
+	</RelativeLayout>
+</LinearLayout>

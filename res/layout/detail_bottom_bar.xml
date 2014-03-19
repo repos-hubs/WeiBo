@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ *reusable xml layout. Be caution: reset background in detail activity of different module.
+ *include：detail_bottom_panel, detail_bottom_panel_previous, detail_bottom_panel_next
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/detail_bottom_panel"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical"
+	android:layout_alignParentBottom="true"
+	android:background="@drawable/ring_float_bg" >
+	<LinearLayout android:id="@id/detail_previous_button"
+		android:orientation="horizontal"
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="10dp"
+		android:background="@drawable/detail_ring_bottom_button_background"
+		android:gravity="center_vertical|center_horizontal"
+		android:clickable="true"
+		android:focusable="true"
+		android:focusableInTouchMode="true">
+		<ImageView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/float_icon_up"
+			android:layout_marginRight="4dp"/>	
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/msg_float_button_before"
+			android:textColor="@color/white"
+			android:gravity="center_horizontal"
+			stype="@style/PlainTextStyle"
+			android:textSize="14sp"
+			android:id="@id/detail_previous_button_text"/>
+	</LinearLayout>
+	<LinearLayout android:id="@id/detail_next_button"
+		android:orientation="horizontal"
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:gravity="center_vertical|center_horizontal"
+		android:layout_marginRight="10dp"
+		android:background="@drawable/detail_ring_bottom_button_background"
+		android:clickable="true"
+		android:focusable="true"
+		android:focusableInTouchMode="true">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/msg_float_button_next"
+			android:textColor="@color/white"
+			android:gravity="center_horizontal"
+			android:textSize="14sp"
+			android:id="@id/detail_next_button_text"
+			stype="@style/PlainTextStyle"/>
+		<ImageView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/float_icon_down"
+			android:layout_marginLeft="4dp"/>	
+	</LinearLayout>
+</RelativeLayout>

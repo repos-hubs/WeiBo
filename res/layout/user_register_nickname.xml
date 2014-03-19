@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@color/white"
+	android:gravity="center_horizontal">
+	<!-- Title Bar -->
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="38dip" android:background="@drawable/head_bg"
+		android:gravity="center_vertical">
+	</RelativeLayout>
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<ImageView android:src="@drawable/set_nickname_in"
+					android:layout_marginTop="20dp" android:layout_marginLeft="12dp"
+					android:id="@+id/loginTitle" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="vertical"
+					android:layout_marginTop="10dp" android:background="@drawable/user_top_bg"
+					android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal">
+						<TextView android:text="@string/user_register_nickname_input"
+							android:layout_marginLeft="10dp" android:layout_marginTop="60dp"
+							android:layout_alignParentLeft="true" android:textSize="16sp"
+							android:layout_width="wrap_content" android:layout_height="wrap_content" />
+						<ImageView android:src="@drawable/nickname_girl"
+							android:layout_alignParentRight="true" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" />
+					</RelativeLayout>
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:layout_margin="5dp">
+						<EditText android:id="@+id/nickname"
+							android:singleLine="true" android:layout_weight="1"
+							android:layout_width="fill_parent" android:layout_height="wrap_content" />
+					</LinearLayout>
+					<ImageView android:layout_gravity="center_horizontal"
+						android:id="@+id/userFinish" android:src="@drawable/register_complete"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp" />
+				</LinearLayout>
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
+

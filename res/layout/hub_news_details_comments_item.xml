@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:minHeight="?android:attr/listPreferredItemHeight"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="6dp"
+    	android:layout_marginRight="6dp">
+    	<RelativeLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:gravity="center_vertical">
+    		
+	    	<TextView 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:id="@+id/userNameTextView"
+	    		android:text="NanMan:"
+	    		android:textSize="18sp"
+	    		android:layout_alignParentLeft="true"
+	    		android:textColor="@color/hub_news_details_comments_user_name"/>
+	    	<TextView 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:id="@+id/timeTextView"
+	    		android:textColor="@color/black"
+	    		android:textSize="13sp"
+	    		android:layout_alignParentRight="true"
+	    		android:text="12 min before"
+	    		android:singleLine="true"/>
+    	</RelativeLayout>
+    	<TextView 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/commentContentTextView"
+    		android:text="@string/msg_sample"
+    		android:textSize="18sp"
+    		android:layout_marginLeft="3dp"
+    		android:textColor="@color/black"/>
+    	
+    </LinearLayout>
+    <RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:layout_marginLeft="6dp"
+		android:layout_marginRight="6dp">
+			
+			<ImageView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/replyImageView"
+				android:layout_alignParentRight="true"
+				android:padding="10dp"
+				android:src="@drawable/icon_blue_comment"/>
+			
+	</RelativeLayout>
+	<ImageView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:src="@drawable/dot_line_short"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="author_text_size">12.0dip</dimen>
+    <dimen name="welcome_title_text_size">20.0dip</dimen>
+    <dimen name="reader_tab_height">60.0dip</dimen>
+    <dimen name="reader_tab_text_size">10.0dip</dimen>
+    <dimen name="media_player_header_height">110.0dip</dimen>
+    <dimen name="media_player_header_margin">-61.0dip</dimen>
+    <dimen name="media_player_padding">10.0dip</dimen>
+</resources>

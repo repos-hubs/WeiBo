@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@id/wallpaper_preview_frame"
+	android:background="@color/main_bg_color"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<include layout="@layout/hub_wallpaper_title_bar" />
+	<LinearLayout android:id="@id/preview_order_bar_wrap_id"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/hub_wallpaper_title_bar_id">
+		<include layout="@layout/wallpaper_title_bar" />
+	</LinearLayout>
+
+		
+	<ListView android:id="@id/order_preview"
+    android:layout_below="@id/preview_order_bar_wrap_id"
+    android:dividerHeight="0dip"
+	style="@style/PreviewListViewStyle" />	
+	
+	<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/gridview" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:numColumns="2"
+		android:verticalSpacing="10dp" 
+		android:horizontalSpacing="10dp"		
+		android:stretchMode="columnWidth"
+		android:gravity="center" 
+		android:layout_below="@id/preview_order_bar_wrap_id"
+		android:background="@color/white"
+		/>
+		
+	<include layout="@layout/online_fast_seek_bar" />
+</RelativeLayout>

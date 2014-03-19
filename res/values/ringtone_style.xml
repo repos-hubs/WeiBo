@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleNameStyle">
+        <item name="android:textSize">@dimen/main_title_text_size</item>
+        <item name="android:textColor">@color/item_name</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TitleBarStyle">
+        <item name="android:background">@drawable/title04</item>
+        <item name="android:paddingLeft">@dimen/title_bar_width_padding</item>
+        <item name="android:paddingRight">@dimen/title_bar_width_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_bar_height</item>
+    </style>
+    <style name="PreviewListViewStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <!--item name="android:divider">@drawable/dot_line</item-->
+        <!--item name="android:dividerHeight">@dimen/listview_divider_width</item-->
+        <!--item name="android:headerDividersEnabled">true</item-->
+        <!--item name="android:footerDividersEnabled">true</item-->
+    </style>
+    <style name="FrameTabViewStyle">
+        <item name="android:textSize">@dimen/title_operation_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textColor">@color/black_80_transparent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="PlainTextStyle">
+        <item name="android:textSize">@dimen/title_operation_text_size</item>
+        <item name="android:textColor">@color/item_name</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="PlainBlackTextStyle" parent="@style/PlainTextStyle">
+        <item name="android:textColor">@color/black_item_name</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="PlainTimeStyle">
+        <item name="android:textSize">@dimen/time_text_size</item>
+        <item name="android:textColor">@color/item_num</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

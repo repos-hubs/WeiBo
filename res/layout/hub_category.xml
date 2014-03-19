@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rootLayout"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/title_blue_bg">
+		<TextView android:id="@+id/titleTextView"
+			android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+			android:textColor="@color/white" android:textStyle="bold"
+			android:textSize="18sp" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<ImageView android:id="@+id/changeDataResource" android:src="@drawable/data_source_btn"
+			android:layout_centerVertical="true" android:layout_alignParentRight="true"
+			android:layout_marginRight="5dp" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</RelativeLayout>
+	<!-- <GridView android:id="@+id/gridView" android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" android:numColumns="3" android:scrollbars="none" 
+		android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="10dp" 
+		android:columnWidth="90dip" android:stretchMode="columnWidth" android:verticalSpacing="10dp" 
+		android:horizontalSpacing="10dp"> </GridView> -->
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:scrollbars="none">
+		<TableLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/tableLayout">
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal"
+				android:background="@drawable/category_item_bg">
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/focusTextView"
+						android:text="@string/home_news_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:layout_marginTop="3dp"
+						android:id="@+id/newsImage" />
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/focusTextView"
+						android:text="@string/home_laugh_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/laughImage"
+						android:layout_marginTop="3dp" />
+
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/focusTextView"
+						android:text="@string/home_beauty_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:layout_marginTop="3dp"
+						android:id="@+id/beautyImage" />
+
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal"
+				android:background="@drawable/category_item_bg">
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/focusTextView"
+						android:text="@string/home_constellation_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:layout_marginTop="3dp"
+						android:id="@+id/constellationImage" />
+
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/focusTextView"
+						android:text="@string/home_recreation_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/recreationImage"
+						android:layout_marginTop="3dp" />
+
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/focusTextView"
+						android:text="@string/home_movie_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/movieImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal"
+				android:background="@drawable/category_item_bg">
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/focusTextView"
+						android:text="@string/home_sports_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/sportsImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/focusTextView"
+						android:text="@string/home_technology_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/techImage"
+						android:layout_marginTop="3dp" />
+
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/focusTextView"
+						android:text="@string/home_game_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/gameImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal"
+				android:background="@drawable/category_item_bg">
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:text="@string/home_fashion_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/fashionImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/home_streettake_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/streettakeImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/home_quotation_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/quotationImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal"
+				android:background="@drawable/category_item_bg">
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:text="@string/home_pet_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/petImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/home_car_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/carImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/home_english_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/englishImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal"
+				android:background="@drawable/category_item_bg">
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:text="@string/home_travel_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/travelImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/home_business_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/businessImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="95dp" android:layout_height="wrap_content"
+					android:layout_margin="6dp" android:layout_weight="1"
+					android:gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/home_originality_title" android:textSize="15sp"
+						android:textColor="@color/black" />
+					<ImageView android:layout_width="80dp"
+						android:layout_height="80dp" android:id="@+id/originalityImage"
+						android:layout_marginTop="3dp" />
+				</LinearLayout>
+			</TableRow>
+		</TableLayout>
+	</ScrollView>
+</LinearLayout>

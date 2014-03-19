@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.kindroid.hub"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="4" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	
+		    <!-- 设置壁纸权限 -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+	
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".ui.Loading" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.HubCategory" android:configChanges="keyboardHidden|orientation" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".ui.NewsCategoryList" android:configChanges="keyboardHidden|orientation" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".ui.HubMain" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation" android:theme="@android:style/Theme.NoTitleBar" />
+            
+        <provider android:name=".provider.RingtoneProvider"
+            android:authorities="com.kindroid.hub.provider.RingtoneProvider" />
+ 		<activity android:name=".ui.HubSummarySina" android:theme="@android:style/Theme.NoTitleBar" />
+<!--  		<activity android:name=".ui.HubCategory" android:theme="@android:style/Theme.NoTitleBar" /> -->
+ 		<activity android:name=".ui.HubTribe" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.UserLogin" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.UserRegister" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.WeiboLogin" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.UserDetailInfo" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.SinaStatusMore" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.SinaFollowMore" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.UserRegisterNickname" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.UserRegisterByPhone" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.UserForgetPwdStepOne" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.UserForgetPwdStepTwo" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.UserLoginDialogTips" android:theme="@style/Theme.CustomDialog" />
+ 		<activity android:name=".ui.category.ringtone.RingtoneMain" android:theme="@android:style/Theme.NoTitleBar"
+ 		    android:configChanges="orientation" />
+ 		<activity android:name=".ui.category.ringtone.RingSearch" android:theme="@android:style/Theme.NoTitleBar"
+ 		    android:configChanges="orientation" />
+ 		<activity android:name=".ui.category.ringtone.RingtoneDetailsActivity" android:theme="@android:style/Theme.NoTitleBar"
+ 		    android:configChanges="orientation" />
+ 		<activity android:name=".ui.AtMeMain" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.AtMeFriendActivity" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.AtMeGroupActivity" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.AtMeMyselfActivity" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.AtMeTopicStatusListActivity" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.AtMeTopicActivity" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.HubSinaWeiboDetailsActivity" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.AtMeStatusActivity" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.NewsListActivity" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.NewsDetailsActivity" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.AsyncImageDataFlow" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.WeiboLinkActivity" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.HubForwardActivity" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.HubReplyActivity" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.HubNewsCommentsActivity" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.HubSinaCommentsListActivity" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.HubNewsSearchActivity" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.AtMeCommentsActivity" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="keyboardHidden|orientation"/>
+ 		<activity android:name=".ui.AtMeSearchActivity" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.HubTribeWriteWeibo" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.AtMeMyselfModificationActivity" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.UserModifyPwd" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.category.ReviewsList" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="orientation|keyboardHidden|locale"/>
+ 		<activity android:name=".ui.category.WallpaperMain" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="orientation|keyboardHidden|locale"/>
+ 		<activity android:name=".ui.category.WallpaperSearch" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.category.MyWallpaper" android:theme="@android:style/Theme.NoTitleBar" />
+ 		<activity android:name=".ui.category.WallpaperContent" android:theme="@android:style/Theme.NoTitleBar" android:configChanges="orientation|keyboardHidden|locale" />
+    	<activity android:name=".ui.category.WallPaperOrringReply" android:theme="@android:style/Theme.NoTitleBar" />
+    <activity android:name=".ui.category.WallPaperOrringReply" android:theme="@android:style/Theme.NoTitleBar" />
+     	<activity
+            android:name=".ui.category.wallpaper.WallpaperChooser"
+            android:label="@string/pick_wallpaper"
+            android:icon="@drawable/icon">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

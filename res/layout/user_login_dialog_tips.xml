@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/user_dialog_bg">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginTop="70dp" android:layout_height="wrap_content"
+		android:gravity="center_horizontal">
+		<TextView android:background="@drawable/text_tips_bg" android:padding="5dp" android:textColor="@color/black"
+			android:text="@string/dialog_user_tip1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<TextView android:background="@drawable/text_tips_bg" android:padding="5dp" android:textColor="@color/black"
+			android:text="@string/dialog_user_tip2" android:layout_marginLeft="50dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginTop="20dp" android:layout_height="wrap_content"
+		android:gravity="center_horizontal">
+		<ImageView android:id="@+id/register" android:src="@drawable/dialog_register_btn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<ImageView android:id="@+id/go" android:src="@drawable/new_bie"
+			android:layout_marginLeft="10dp" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginTop="30dp" android:layout_height="wrap_content"
+		android:gravity="center_horizontal">
+		<ImageView android:id="@+id/checkSwitch" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:text="@string/dialog_user_tip"
+			android:layout_marginLeft="10dp" android:textSize="14sp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>

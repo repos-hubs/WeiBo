@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="gray">#ffa6a6a0</color>
+    <color name="deepcolor">#fffaaa5f</color>
+    <color name="shadowcolor">#ff333333</color>
+    <color name="naming">#ffababab</color>
+    <color name="progressbar_background">#ff272727</color>
+    <color name="orange_yellow">#ff9b9ba0</color>
+    <color name="subject_name_bg">#9a000000</color>
+    <color name="recommand_network_status">#ff3399cc</color>
+    <color name="item_name">#ffffffff</color>
+    <color name="black_item_name">#ff000000</color>
+    <color name="item_num">#ff909090</color>
+    <color name="ringtone_progress_layout_background">#ffe7e7e7</color>
+    <color name="ringtone_player_progressbar_background">#ffd2d2d2</color>
+    <color name="ringtone_player_progressbar_secondaryprogress">#ffbd60d0</color>
+    <color name="ringtone_player_progressbar_progress">#ff863896</color>
+    <color name="main_bg_color">#fffafafa</color>
+    <color name="light_blue">#ff768494</color>
+    <color name="search_key_word">#ffcc3333</color>
+    <color name="fast_seek_bar_bg">#d0b1babe</color>
+    <color name="fast_seek_bar_descript_normal">#ff2f5675</color>
+    <color name="fast_seek_bar_descript_onscroll">#ff2f5675</color>
+    <color name="black_80_transparent">#d0000000</color>
+    <color name="white_40_transparent">#60ffffff</color>
+    <color name="white_20_transparent">#30ffffff</color>
+    <color name="white_60_transparent">#90ffffff</color>
+    <color name="black_half_transparent">#80000000</color>
+    <color name="blue_category_item_selected">#ff66ccff</color>
+    <color name="white_25_transparent">#40ffffff</color>
+    <color name="dragndrop_background">#e0103010</color>
+    <color name="white_half_transparent">#80ffffff</color>
+    <color name="white_80_transparent">#d0ffffff</color>
+    <color name="white_30_transparent">#55ffffff</color>
+    <color name="white_50_transparent">#80ffffff</color>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:id="@+id/downloadingDialog">
+	<TextView android:id="@+id/releaseNote" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:layout_margin="5dp"
+		android:gravity="center_horizontal" android:textSize="16sp" android:textStyle="bold" />
+	<ProgressBar android:visibility="gone" android:id="@+id/downloadingProgress"
+		android:layout_margin="5dp"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<LinearLayout android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal" android:gravity="center_horizontal">
+		<Button android:id="@+id/downloadOkBtn" android:clickable="true"
+			android:text="@string/msg_add_group_confirm" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1" />
+		<Button android:id="@+id/downloadCancelBtn" android:clickable="true"
+			android:text="@string/msg_add_group_cancel" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1" />
+	</LinearLayout>
+</LinearLayout>

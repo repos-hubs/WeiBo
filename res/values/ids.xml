@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<item type="id" name="wallpaper_preview_frame">false</item>
+	<item type="id" name="wallpaper_search_preview_frame">false</item>
+	<item type="id" name="wallpaper_search_bar_layout">false</item>
+	<item type="id" name="wallpaper_search_preview">false</item>
+	<item type="id" name="select_layout">false</item>
+	
+	<item type="id" name="wallpaper_image">false</item>
+	<item type="id" name="wallpaper_title">false</item>
+	<item type="id" name="wallpaper_back">false</item>
+	<item type="id" name="wallpaper_search">false</item>
+	<item type="id" name="hub_wallpaper_title_bar_id">false</item>	
+	<item type="id" name="wallpaper_preview_item_title">false</item>
+	<item type="id" name="wallpaper_share_person">false</item>
+	<item type="id" name="wallpaper_share_time">false</item>
+	<item type="id" name="wallpaper_comment">false</item>
+	<item type="id" name="wallpaper_share">false</item>
+	<item type="id" name="wallpaper_enlarge">false</item>
+	<item type="id" name="wallpaper_title_name">false</item>
+	<item type="id" name="wallpaper_comment_name">false</item>
+	<item type="id" name="wallpaper_preview_item_id">false</item>
+	<item type="id" name="wallpaper_order_bar_id">false</item>
+	
+	
+	
+	
+	
+	
+	
+</resources>
